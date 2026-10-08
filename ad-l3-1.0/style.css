@@ -1,0 +1,97 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: gray;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: calc(100% - 2rem);
+  max-width: 960px;
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(5rem, 1fr) minmax(0, 2fr);
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.col-4,
+.col-8 {
+  min-width: 0;
+}
+
+.display-1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 5rem);
+}
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+}
+
+.img-thumbnail {
+  box-sizing: border-box;
+  padding: 0.25rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #777;
+}
+
+h3 {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
+
+h5 {
+  cursor: pointer;
+}
+
+figure {
+  margin-bottom: 0;
+}
+
+.figure-caption {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 576px) {
+  .row {
+    grid-template-columns: minmax(4rem, 1fr) minmax(0, 2fr);
+    gap: 0.5rem;
+  }
+}
+  
